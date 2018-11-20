@@ -1,17 +1,17 @@
 # Snowflake
 
-A snowflake is a source of k-ordered unique 64-bit integers.
+Snowflake是k次序唯一64位整数的来源。
 
-This is a Java library for generating ids in an un-coordinated setting:
+这是一个用于在非协调设置中生成ID的Java库:
 
     int node = 1;
     Snowflake s = new Snowflake(node);
     long id = s.next();
 
-The node id is a manually assigned value between 0 and 1023 which is
- used to differentiate different snowflakes when used in a multi-node cluster.
+节点id是手动分配的值，介于0和1023之间
+  用于在多节点群集中使用时区分不同的Snowflake.
 
-To include this as a library, you can use the following Maven dependency:
+要将其作为库包含，您可以使用以下Maven依赖项:
 
     <dependency>
         <groupId>com.relops</groupId>
